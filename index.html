@@ -123,6 +123,25 @@
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=951130702132399&autoLogAppEvents=1"
       nonce="lGfr5con"
     ></script>
+    
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js">
+    < footer class = "footer-collapse px-1 py-3" >
+        <
+        link rel = "stylesheet"
+    href = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" / >
+        <
+        script type = "text/javascript"
+    src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" >
+</script>
+<script type="text/javascript">
+    algoliasearchNetlify({
+        appId: 'O6OT9G9U8Z',
+        apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
+        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
+        branch: 'master',
+        selector: 'div#search',
+    });
+</script>
     <script>
       window.fbAsyncInit = function () {
         FB.init({
@@ -161,12 +180,12 @@
 
   <body>
     <details>
-<summary>Heading</summary>
+<summary>Comments & Social Media </summary>
 
     <!--------------------------------------------------------------->
     <!---------------------------BODY TAG------------------------------------>
     <!--------------------------------------------------------------->
-
+        <div id="search"></div>
     <script>
       FB.login(function (response) {
         if (response.authResponse) {
