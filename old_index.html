@@ -92,7 +92,13 @@
       type="text/javascript"
       src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
     ></script>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=448469606483680&autoLogAppEvents=1" nonce="8MWugi8C"></script>
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=448469606483680&autoLogAppEvents=1"
+      nonce="8MWugi8C"
+    ></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
       integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
@@ -123,31 +129,36 @@
       src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=951130702132399&autoLogAppEvents=1"
       nonce="lGfr5con"
     ></script>
-    
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js">
-    < footer class = "footer-collapse px-1 py-3" >
-        <
-        link rel = "stylesheet"
-    href = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" / >
-        <
-        script type = "text/javascript"
-    src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" >
-</script>
-<script type="text/javascript">
-    algoliasearchNetlify({
-        appId: 'O6OT9G9U8Z',
-        apiKey: 'b0cb3d390176e1ff4bd1ecb12fc15730',
-        siteId: 'a1b7ee1a-11a7-4bd2-a341-2260656e216f',
-        branch: 'master',
-        selector: 'div#search',
-    });
-</script>
+
+    <script
+      async
+      defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js"
+    >
+      < footer class = "footer-collapse px-1 py-3" >
+          <
+          link rel = "stylesheet"
+      href = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.css" / >
+          <
+          script type = "text/javascript"
+      src = "https://cdn.jsdelivr.net/npm/@algolia/algoliasearch-netlify-frontend@1/dist/algoliasearchNetlify.js" >
+    </script>
+    <script type="text/javascript">
+      algoliasearchNetlify({
+        appId: "O6OT9G9U8Z",
+        apiKey: "b0cb3d390176e1ff4bd1ecb12fc15730",
+        siteId: "a1b7ee1a-11a7-4bd2-a341-2260656e216f",
+        branch: "master",
+        selector: "div#search",
+      });
+    </script>
     <script>
       window.fbAsyncInit = function () {
         FB.init({
           appId: "1830532773796311",
           xfbml: true,
-          version: "v12.0"
+          version: "v12.0",
         });
         FB.AppEvents.logPageView();
       };
@@ -179,240 +190,239 @@
   <!--------------------------------------------------------------->
 
   <body>
-    
-        <div id="search"></div>    
-    
+    <div id="search"></div>
+
     <details>
-<summary>Comments & Social Media </summary>
+      <summary>Comments & Social Media</summary>
 
-    <!--------------------------------------------------------------->
-    <!---------------------------BODY TAG------------------------------------>
-    <!--------------------------------------------------------------->
+      <!--------------------------------------------------------------->
+      <!---------------------------BODY TAG------------------------------------>
+      <!--------------------------------------------------------------->
 
-    <script>
-      FB.login(function (response) {
-        if (response.authResponse) {
-          console.log("Welcome!  Fetching your information.... ");
-          FB.api("/me", function (response) {
-            console.log("Good to see you, " + response.name + ".");
-          });
-        } else {
-          console.log("User cancelled login or did not fully authorize.");
-        }
-      });
-    </script>
-    <script>
-      window.fbAsyncInit = function () {
-        FB.init({
-          appId: "{your-app-id}",
-          cookie: true,
-          xfbml: true,
-          version: "{api-version}"
+      <script>
+        FB.login(function (response) {
+          if (response.authResponse) {
+            console.log("Welcome!  Fetching your information.... ");
+            FB.api("/me", function (response) {
+              console.log("Good to see you, " + response.name + ".");
+            });
+          } else {
+            console.log("User cancelled login or did not fully authorize.");
+          }
         });
+      </script>
+      <script>
+        window.fbAsyncInit = function () {
+          FB.init({
+            appId: "{your-app-id}",
+            cookie: true,
+            xfbml: true,
+            version: "{api-version}",
+          });
 
-        FB.AppEvents.logPageView();
-      };
+          FB.AppEvents.logPageView();
+        };
 
-      (function (d, s, id) {
-        var js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-          return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "https://connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-      })(document, "script", "facebook-jssdk");
-    </script>
-    <!--------------------------------CONTENT------------------------------->
-    <!--------------------------------CONTENT------------------------------->
-    <!----------------------------FB_COMMENTS----------------------------------->
-    <div id="fb-root"></div>
-    <div
-      class="fb-comments"
-      data-href="https://bgoonz-blog.netlify.app/"
-      data-width="100%"
-      data-numposts="60"
-    ></div>
-    <br />
-    <br />
-    <br />
-    <center>
-      <br />
-      <br />
-      <br />
-      <fb:login-button
-        scope="public_profile,email"
-        onlogin="checkLoginState();"
-      >
-      </fb:login-button>
-      <br />
-      <br />
-      <br />
-
-      <br />
-      <br />
-      <br />
+        (function (d, s, id) {
+          var js,
+            fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) {
+            return;
+          }
+          js = d.createElement(s);
+          js.id = id;
+          js.src = "https://connect.facebook.net/en_US/sdk.js";
+          fjs.parentNode.insertBefore(js, fjs);
+        })(document, "script", "facebook-jssdk");
+      </script>
+      <!--------------------------------CONTENT------------------------------->
+      <!--------------------------------CONTENT------------------------------->
+      <!----------------------------FB_COMMENTS----------------------------------->
+      <div id="fb-root"></div>
       <div
-        class="fb-like"
-        data-share="true"
-        data-width="450"
-        data-show-faces="true"
+        class="fb-comments"
+        data-href="https://bgoonz-blog.netlify.app/"
+        data-width="100%"
+        data-numposts="60"
       ></div>
       <br />
       <br />
       <br />
-
-      <br />
-      <br />
-      <br />
-      <div
-        class="fb-page"
-        data-href="https://www.facebook.com/Webdevresourcehub-blog-103884128414320"
-        data-tabs="timeline"
-        data-width="500"
-        data-height="600"
-        data-small-header="true"
-        data-adapt-container-width="false"
-        data-hide-cover="false"
-        data-show-facepile="true"
-      >
-        <blockquote
-          cite="https://www.facebook.com/Webdevresourcehub-blog-103884128414320"
-          class="fb-xfbml-parse-ignore"
-        >
-          <a
-            href="https://www.facebook.com/Webdevresourcehub-blog-103884128414320"
-            >Webdevresourcehub-blog</a
-          >
-        </blockquote>
-      </div>
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <!--------------------------TWITTER-----------------------------TWITTER--------------------------------->
-      <hr />
-      <h1>TWITTER EMBEDS</h1>
-      <hr />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <a href="https://twitter.com/intent/tweet?in_reply_to=463440424141459456"
-        >Reply</a
-      >
-      <a href="https://twitter.com/intent/retweet?tweet_id=463440424141459456"
-        >Retweet</a
-      >
-      <a href="https://twitter.com/intent/like?tweet_id=463440424141459456"
-        >Like</a
-      >
-      <br />
-      <br />
-      <br />
-
-      <br />
-      <br />
-      <br />
-      <a
-        class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?text=Hello%20world"
-      >
-        Tweet</a
-      >
-      <br />
-      <br />
-      <br />
-
-      <br />
-      <br />
-      <br />
-
-      <a class="twitter-follow-button" href="https://twitter.com/bgooonz">
-        Follow @bgooonz</a
-      >
-
       <center>
-        <a
-          class="twitter-timeline"
-          data-lang="en"
-          data-width="1200"
-          data-height="800"
-          data-theme="light"
-          href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw"
-          >Tweets by bgooonz</a
+        <br />
+        <br />
+        <br />
+        <fb:login-button
+          scope="public_profile,email"
+          onlogin="checkLoginState();"
         >
+        </fb:login-button>
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <div
+          class="fb-like"
+          data-share="true"
+          data-width="450"
+          data-show-faces="true"
+        ></div>
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <div
+          class="fb-page"
+          data-href="https://www.facebook.com/Webdevresourcehub-blog-103884128414320"
+          data-tabs="timeline"
+          data-width="500"
+          data-height="600"
+          data-small-header="true"
+          data-adapt-container-width="false"
+          data-hide-cover="false"
+          data-show-facepile="true"
+        >
+          <blockquote
+            cite="https://www.facebook.com/Webdevresourcehub-blog-103884128414320"
+            class="fb-xfbml-parse-ignore"
+          >
+            <a
+              href="https://www.facebook.com/Webdevresourcehub-blog-103884128414320"
+              >Webdevresourcehub-blog</a
+            >
+          </blockquote>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <!--------------------------TWITTER-----------------------------TWITTER--------------------------------->
+        <hr />
+        <h1>TWITTER EMBEDS</h1>
+        <hr />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <a
+          href="https://twitter.com/intent/tweet?in_reply_to=463440424141459456"
+          >Reply</a
+        >
+        <a href="https://twitter.com/intent/retweet?tweet_id=463440424141459456"
+          >Retweet</a
+        >
+        <a href="https://twitter.com/intent/like?tweet_id=463440424141459456"
+          >Like</a
+        >
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+        <a
+          class="twitter-share-button"
+          href="https://twitter.com/intent/tweet?text=Hello%20world"
+        >
+          Tweet</a
+        >
+        <br />
+        <br />
+        <br />
+
+        <br />
+        <br />
+        <br />
+
+        <a class="twitter-follow-button" href="https://twitter.com/bgooonz">
+          Follow @bgooonz</a
+        >
+
+        <center>
+          <a
+            class="twitter-timeline"
+            data-lang="en"
+            data-width="1200"
+            data-height="800"
+            data-theme="light"
+            href="https://twitter.com/bgooonz?ref_src=twsrc%5Etfw"
+            >Tweets by bgooonz</a
+          >
+        </center>
+        <!--------------------------------------------------------------->
+
+        <div class="addthis_relatedposts_inline"></div>
+        <!--------------------------------CONTENT------------------------------->
+        <!--------------------------------CONTENT-------------------------------><!--------------------------------SCRIPTS------------------------------->
+        <!--------------------------------SCRIPTS------------------------------->
+
+        <!--------------------------------------------------------------->
+
+        <!--------------------------------------------------------------->
+
+        <!--------------------------------------------------------------->
+
+        <!--------------------------------------------------------------->
+
+        <!--------------------------ADD THIS------------------------------------->
+        <script
+          type="text/javascript"
+          src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
+        ></script>
+
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+          type="text/javascript"
+          src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
+        ></script>
+
+        <!--------------------------------------------------------------->
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+          type="text/javascript"
+          src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
+        ></script>
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+        <script
+          type="text/javascript"
+          src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
+        ></script>
+        <!--------------------------------------------------------------->
+
+        <script src="js/scripts.js"></script>
+
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
       </center>
-      <!--------------------------------------------------------------->
-
-      <div class="addthis_relatedposts_inline"></div>
-      <!--------------------------------CONTENT------------------------------->
-      <!--------------------------------CONTENT-------------------------------><!--------------------------------SCRIPTS------------------------------->
       <!--------------------------------SCRIPTS------------------------------->
-
-      <!--------------------------------------------------------------->
-
-      <!--------------------------------------------------------------->
-
-      <!--------------------------------------------------------------->
-
-      <!--------------------------------------------------------------->
-
-      <!--------------------------ADD THIS------------------------------------->
-      <script
-        type="text/javascript"
-        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
-      ></script>
-
+      <!--------------------------------SCRIPTS------------------------------->
       <!-- Go to www.addthis.com/dashboard to customize your tools -->
       <script
         type="text/javascript"
         src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
       ></script>
-
-      <!--------------------------------------------------------------->
-      <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      <script
-        type="text/javascript"
-        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
-      ></script>
-      <!-- Go to www.addthis.com/dashboard to customize your tools -->
-      <script
-        type="text/javascript"
-        src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
-      ></script>
-      <!--------------------------------------------------------------->
-
-      <script src="js/scripts.js"></script>
-
       <script
         async
         src="https://platform.twitter.com/widgets.js"
         charset="utf-8"
       ></script>
-    </center>
-    <!--------------------------------SCRIPTS------------------------------->
-    <!--------------------------------SCRIPTS------------------------------->
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <script
-      type="text/javascript"
-      src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-60dcec1ece575946"
-    ></script>
-    <script
-      async
-      src="https://platform.twitter.com/widgets.js"
-      charset="utf-8"
-    ></script>
 
-    <!-- Go to www.addthis.com/dashboard to customize your tools -->
-    <div class="addthis_relatedposts_inline"></div>
-        
-</details>
+      <!-- Go to www.addthis.com/dashboard to customize your tools -->
+      <div class="addthis_relatedposts_inline"></div>
+    </details>
   </body>
 </html>
