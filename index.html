@@ -105,9 +105,7 @@
     })(document, "script", "facebook-jssdk");
   </script>
 
-  <script async defer crossorigin="anonymous"
-    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=951130702132399&autoLogAppEvents=1"
-    nonce="Spol7MAC"></script>
+
 </head>
 
 <!--------------------------------------------------------------->
@@ -115,57 +113,23 @@
 <!--------------------------------------------------------------->
 
 <body>
+    <center>
+      <br />
     <details>
       <summary>Comments & Social Media </summary>
-  <div id="search"></div>
   <!--------------------------------------------------------------->
   <!---------------------------BODY TAG------------------------------------>
   <!--------------------------------------------------------------->
 
-  <script>
-    FB.login(function (response) {
-      if (response.authResponse) {
-        console.log("Welcome!  Fetching your information.... ");
-        FB.api("/me", function (response) {
-          console.log("Good to see you, " + response.name + ".");
-        });
-      } else {
-        console.log("User cancelled login or did not fully authorize.");
-      }
-    });
-  </script>
-  <script>
-    window.fbAsyncInit = function () {
-      FB.init({
-        appId: "{your-app-id}",
-        cookie: true,
-        xfbml: true,
-        version: "{api-version}"
-      });
 
-      FB.AppEvents.logPageView();
-    };
-
-    (function (d, s, id) {
-      var js,
-        fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) {
-        return;
-      }
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://connect.facebook.net/en_US/sdk.js";
-      fjs.parentNode.insertBefore(js, fjs);
-    })(document, "script", "facebook-jssdk");
-  </script>
+  
   <!--------------------------------CONTENT------------------------------->
   <!--------------------------------CONTENT------------------------------->
   <!----------------------------FB_COMMENTS----------------------------------->
-  <div id="fb-root"></div>
+
 
   <br />
-  <center>
-    <br />
+
     <br />
     <br />
     <div class="fb-comments" data-href="https://bgoonz-blog.netlify.app/" data-width="100%" data-numposts="60"></div>
@@ -197,8 +161,7 @@
     <br />
     <br />
     <br />
-    <div id="search"></div>
-    <br />
+      <br />
     <br />
     <!--------------------------TWITTER-----------------------------TWITTER--------------------------------->
     <hr />
